@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:sec = "http://www.thymeleaf.org/extras/spring-security" >
+
+<head th:include="fragments/head" th:with="pageTitle='SoftUni Blog'"></head>
+
+<body>
+
+<header th:include="fragments/header"></header>
+
+<main >
+    <div class = "container-fluid">
+        <div class = "text-center">
+            <h2>[[${title}]]</h2>
+            <h4>[[${message}]]</h4>
+        </div>
+    </div>
+</main>
+
+<span th:include="fragments/scripts-bundle"></span>
+
+</body>
+</html>
